@@ -1,7 +1,7 @@
 # Chaotix.AI Assignment
 
 ## Project Overview
-Chaotix.AI Assignment is a Django-based application that utilizes Stability AI's Text-to-Image API to generate images asynchronously using Celery. The project is containerized using Docker and connects to a PostgreSQL database. The application also features a REST API built with Django REST Framework for managing TestUser objects.
+Chaotix.AI Assignment is a Django-based application that utilizes Stability AI's Text-to-Image API to generate images asynchronously using Celery. The project is containerized using Docker and connects to a PostgreSQL database. The application also features a REST API built with Django REST Framework for managing the objects.
 
 ## Features
 
