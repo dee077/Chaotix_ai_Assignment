@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'Chaotix_ai_Assignment.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Chaotix_ai_Assignment_DB',
-        'USER': 'dee777',
-        'PASSWORD': '1234',
-        'HOST': 'db',  
-        'PORT': '5432', 
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST'),  
+        'PORT': os.environ.get('DB_PORT'), 
     }
 }
 

@@ -8,6 +8,8 @@ services:
     volumes:
       - .:/app
       - ./images:/app/images
+    env_file:
+      - .env
     ports:
       - "8000:8000"
     depends_on:
@@ -48,6 +50,8 @@ services:
     container_name: Celery
     build: .
     command: celery -A Chaotix_ai_Assignment worker --loglevel=info
+    env_file:
+      - .env
     volumes:
       - .:/app
       - ./images:/app/images

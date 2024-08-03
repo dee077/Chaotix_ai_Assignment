@@ -8,12 +8,15 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+API_KEY_1=os.environ.get('API_KEY_1')
+API_KEY_2=os.environ.get('API_KEY_2')
+
 
 @shared_task
 def generate_image(prompt):
     url = "https://api.stability.ai/v2beta/stable-image/generate/ultra"
     headers = {
-        "authorization": "Bearer sk-mkc5aw2rN6OPk4hdEbkP3zXNAf7E2VUa8ZpSXpe5DHoWlq2K",
+        "authorization": f"Bearer {API_KEY_1}",
         "accept": "image/*"
     }
     files = {"none": ''}
