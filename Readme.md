@@ -28,7 +28,7 @@ Chaotix.AI Assignment is a Django-based application that utilizes Stability AI's
 ## API Endpoints
 
 ### Generate Image
-- **URL**: `/generate-image/`
+- **URL**: `/api/generate-image/`
 - **Method**: `POST`
 - **Description**: Generates images based on text prompts.
 - **Request Body**:
